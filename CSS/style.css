@@ -187,6 +187,18 @@ nav a:hover{
     text-align: center;
     margin-top: 30px;
 }
+.contenedor-boton a{
+    background: #1DAAE8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+.contenedor-boton a:hover{
+    background: #000608;
+}
 .jugadores{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
@@ -231,17 +243,20 @@ nav a:hover{
 }
 
 .banner h2{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 /* TIENDA */
-
+img{
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
 .tienda{
     text-align: center;
     background: white;
     padding: 80px 20px;
 }
-
 .tienda img{
     width: 300px;
     margin-bottom: 20px;
@@ -256,7 +271,6 @@ nav a:hover{
     max-width: 700px;
     margin: auto;
 }
-
 /* TROFEOS */
 
 .trofeos{
