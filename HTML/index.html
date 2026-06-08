@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RG-Pagina principal</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="icon" href="../images/logoConFondoRG.png">
 </head>
 <body>
-    
+    <header>
+        <div class="barra-anuncios">
+            <span>¿Venis a un club grande o venis hacer grande a un club?</span> 
+        </div>
+        <div class="top-bar"></div>
+            <div class="logo">
+                <img src="../images/logoRG.png" alt="Logo-de-RG">
+            </div>
+            <h1 class="titulo-principal">RIo Grande</h1>
+            <nav>
+                <ul>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="jugadores.html">Jugadores</a></li>
+                    <li><a href="trofeos.html">Trofeos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="bienvenida">
+        <div>
+            <h2>Bienvenido a la página oficial de Rio Grande</h2>
+            <p>En esta página encontrarás toda la información sobre nuestro equipo, su historia, jugadores destacados, trofeos ganados y mucho más. ¡Explora nuestras secciones para conocer más sobre Rio Grande!</p>  
+        </div>
+        </section class="slider-section">
+        <div class="slider">
+            <img id="imagen" src="../Images/11inicialRG.jpg">
+                <div class="contenido">
+                    <h2 id="titulo">Esto es rio grande</h2>
+                    <p id="descripcion">Rio grande es más que un club, es una familia que lucha por sueños.</p>
+                </div>
+            <button class="flecha izquierda" onclick="anterior()">❮</button>
+            <button class="flecha derecha" onclick="siguiente()">❯</button>
+        </div>
+        </section>
+        <section class="destacados">
+            <h2>Jugadores Destacados</h2>
+            <div class="jugadores">
+                <div class="jugador">
+                    <img src="../images/pela.png" alt="Jugador 1">
+                    <h3>Pelado</h3>
+                    <p>Descripción breve del jugador 1.</p>
+                </div>
+                <div class="jugador">
+                    <img src="../images/pato.png" alt="Jugador 2">
+                    <h3>Jugador 2</h3>
+                    <p>Descripción breve del jugador 2.</p>
+                </div>
+                    <div class="jugador">
+                    <img src="../images/baiz.png" alt="Jugador 3">
+                    <h3>Jugador 3</h3>
+                    <p>Descripción breve del jugador 3.</p>
+                </div>
+                    <div class="jugador">
+                    <img src="../images/tardela.png" alt="Jugador 4">
+                    <h3>Jugador 4</h3>
+                    <p>Descripción breve del jugador 4.</p>
+                </div>
+            </div>
+            <div class="contenedor-boton">
+                <a href="jugadores.html" class="boton">VER MÁS JUGADORES</a>
+            </div>
+        </section>
+        <section class="banner">
+            <h2>¡La familia más GRANDE de Neuquén!</h2>
+        </section>
+        <section class="tienda">
+            <img src="../images/productos.png" alt="Camiseta oficial de Rio Grande">
+            <h2>Visita nuestra tienda oficial</h2>
+            <p>Encuentra la camiseta oficial de Rio Grande y otros productos exclusivos en nuestra tienda online. ¡Apoya a tu equipo con estilo!</p>
+            <a href="tienda.html" class="boton">Ir a la tienda</a>
+        </section>
+        <section class="trofeos">
+            <h2>Trofeos</h2>
+            <img src="../Images/trofeos.png" alt="Trofeos de Rio Grande">
+            <p>Descubre los trofeos que nuestro equipo ha ganado a lo largo de su historia.</p>
+            <a href="trofeos.html" class="boton">Ver trofeos</a>
+        </section>
+    </main>
+    <section class="contacto">   
+        <h2>¡Únete a la familia de Rio Grande!</h2>
+        <p>Si quieres ser parte de esta gran familia, no dudes en contactarnos o seguirnos en nuestras redes sociales para estar al tanto de todas las novedades.</p>
+        <a href="contacto.html" class="boton">Contáctanos</a>
+    </section>
+    <footer>
+        <img src="../images/logoRG.png" alt="Logo de Rio Grande">
+        <p>&copy; 2024 Rio Grande. Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="https://www.facebook.com/riogrande" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/riogrande" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/riogrande" target="_blank">Twitter</a>
+        </div>
+    </footer>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

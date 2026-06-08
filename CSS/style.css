@@ -1,0 +1,341 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: bebasNeue;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* BARRA DE ANUNCIOS */
+
+.barra-anuncios{
+    background: #1DAAE8;
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+}
+
+/* HEADER */
+
+header{
+    background: #000;
+    color: white;
+}
+
+.top-bar{
+    height: 10px;
+    background: #1DAAE8;
+}
+
+.logo{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.titulo-principal{
+    text-align: center;
+    color: #1DAAE8;
+    font-size: 5rem;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+/* NAV */
+
+nav{
+    padding-bottom: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+    letter-spacing: 0.1rem;
+}
+
+nav a:hover{
+    color: #1DAAE8;
+}
+
+/* BIENVENIDA */
+
+.bienvenida{
+    text-align: center;
+    padding: 80px 15%;
+    background: white;
+}
+
+.bienvenida h2{
+    color: #1DAAE8;
+    margin-bottom: 20px;
+    font-size: 3.5rem;
+}
+
+.bienvenida p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+}
+
+/* SLIDER */
+
+.slider{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    height: 550px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.fade-out{
+    opacity: 0;
+}
+.contenido{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    background: linear-gradient(
+        transparent,
+        rgba(0,0,0,.95)
+    );
+    color: white;
+}
+
+.contenido h2{
+    color: #1DAAE8;
+    margin-bottom: 10px;
+    font-size: 5.5rem;
+}
+.contenido p{
+    font-size: 1.5rem;
+    max-width: 700px;
+}
+
+.flecha{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,.6);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.flecha:hover{
+    background: #1DAAE8;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.izquierda{
+    left: 20px;
+}
+
+.derecha{
+    right: 20px;
+}
+
+/* JUGADORES */
+.destacados{
+    padding: 80px 10%;
+}
+.destacados h2{
+    text-align: center;
+    color: #1DAAE8;
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+}
+.contenedor-boton{
+    text-align: center;
+    margin-top: 30px;
+}
+.jugadores{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.jugador{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.jugador:hover{
+    transform: translateY(-10px);
+}
+
+.jugador img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.jugador h3{
+    color: #1DAAE8;
+    margin: 15px 0;
+}
+
+.jugador p{
+    padding: 0 15px 20px;
+
+}
+/* BANNER */
+
+.banner{
+    background: linear-gradient(135deg,#000,#1DAAE8);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h2{
+    font-size: 3rem;
+}
+
+/* TIENDA */
+
+.tienda{
+    text-align: center;
+    background: white;
+    padding: 80px 20px;
+}
+
+.tienda img{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.tienda h2{
+    color: #1DAAE8;
+    margin-bottom: 15px;
+}
+
+.tienda p{
+    max-width: 700px;
+    margin: auto;
+}
+
+/* TROFEOS */
+
+.trofeos{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.trofeos h2{
+    color: #1DAAE8;
+    margin-bottom: 20px;
+}
+
+.trofeos img{
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    background: #1DAAE8;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contacto h2{
+    margin-bottom: 20px;
+}
+
+.contacto p{
+    max-width: 700px;
+    margin: auto;
+}
+
+/* BOTONES */
+
+.boton{
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.boton:hover{
+    background: white;
+    color: #1DAAE8;
+}
+
+/* FOOTER */
+
+footer{
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+footer img{
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.redes{
+    margin-top: 15px;
+}
+
+.redes a{
+    color: #1DAAE8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.redes a:hover{
+    color: white;
+}
