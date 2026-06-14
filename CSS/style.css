@@ -227,6 +227,7 @@ nav a:hover{
 .jugador h3{
     color: #1DAAE8;
     margin: 15px 0;
+    font-size: 1.8rem;
 }
 
 .jugador p{
@@ -254,7 +255,7 @@ img{
 }
 .tienda{
     text-align: center;
-    background: white;
+    background: linear-gradient(135deg,#000,#1DAAE8);
     padding: 80px 20px;
 }
 .tienda img{
@@ -265,11 +266,54 @@ img{
 .tienda h2{
     color: #1DAAE8;
     margin-bottom: 15px;
+    font-size: 3.5rem;
 }
 
 .tienda p{
     max-width: 700px;
     margin: auto;
+}
+.catalogo-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+.producto{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.producto:hover{
+    transform: translateY(-10px);
+}
+
+.producto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.producto h3{
+    color: #1DAAE8;
+    margin: 15px 0;
+    font-size: 1.8rem;
+}
+
+.producto p{
+    padding: 0 15px 20px;
+}
+.contenedor-boton-tienda .boton{
+    background: #ffffff;
+    color: rgb(89, 152, 204);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: .3s;
 }
 /* TROFEOS */
 
