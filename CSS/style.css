@@ -1,7 +1,12 @@
-@font-face {
+/* =========================
+   FUENTES Y RESET
+========================= */
+
+@font-face{
     font-family: BebasNeue;
     src: url(../fonts/BebasNeue-Regular.otf);
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -9,23 +14,27 @@
 }
 
 body{
-    font-family: bebasNeue;
+    font-family: BebasNeue, sans-serif;
     background: #f5f5f5;
     color: #222;
 }
 
-/* BARRA DE ANUNCIOS */
+/* =========================
+   BARRA DE ANUNCIOS
+========================= */
 
 .barra-anuncios{
     background: #1DAAE8;
     color: white;
     text-align: center;
-    padding-top: 6px;
+    padding: 10px;
     font-weight: bold;
-    letter-spacing: 0.5rem;
+    letter-spacing: .1rem;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header{
     background: #000;
@@ -49,13 +58,15 @@ header{
 .titulo-principal{
     text-align: center;
     color: #1DAAE8;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 15px 0;
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: .4rem;
 }
 
-/* NAV */
+/* =========================
+   NAV
+========================= */
 
 nav{
     padding-bottom: 20px;
@@ -64,7 +75,7 @@ nav{
 nav ul{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
     flex-wrap: wrap;
 }
@@ -73,15 +84,19 @@ nav a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
     transition: .3s;
-    letter-spacing: 0.1rem;
 }
 
 nav a:hover{
-    color: #1DAAE8;
+    background: #1DAAE8;
+    color: white;
 }
 
-/* BIENVENIDA */
+/* =========================
+   BIENVENIDA
+========================= */
 
 .bienvenida{
     text-align: center;
@@ -92,15 +107,17 @@ nav a:hover{
 .bienvenida h2{
     color: #1DAAE8;
     margin-bottom: 20px;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .bienvenida p{
     line-height: 1.8;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* SLIDER */
+/* =========================
+   SLIDER
+========================= */
 
 .slider{
     position: relative;
@@ -117,12 +134,13 @@ nav a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity .8s ease-in-out;
 }
 
 .fade-out{
     opacity: 0;
 }
+
 .contenido{
     position: absolute;
     bottom: 0;
@@ -138,10 +156,11 @@ nav a:hover{
 .contenido h2{
     color: #1DAAE8;
     margin-bottom: 10px;
-    font-size: 5.5rem;
+    font-size: 4rem;
 }
+
 .contenido p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     max-width: 700px;
 }
 
@@ -173,32 +192,21 @@ nav a:hover{
     right: 20px;
 }
 
-/* JUGADORES */
+/* =========================
+   JUGADORES
+========================= */
+
 .destacados{
     padding: 80px 10%;
 }
+
 .destacados h2{
     text-align: center;
     color: #1DAAE8;
     margin-bottom: 40px;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
-.contenedor-boton{
-    text-align: center;
-    margin-top: 30px;
-}
-.contenedor-boton a{
-    background: #1DAAE8;
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: .3s;
-}
-.contenedor-boton a:hover{
-    background: #000608;
-}
+
 .jugadores{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
@@ -212,10 +220,11 @@ nav a:hover{
     text-align: center;
     box-shadow: 0 0 15px rgba(0,0,0,.15);
     transition: .3s;
+    cursor: pointer;
 }
 
 .jugador:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.03);
 }
 
 .jugador img{
@@ -232,9 +241,29 @@ nav a:hover{
 
 .jugador p{
     padding: 0 15px 20px;
-
 }
-/* BANNER */
+
+.contenedor-boton{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.contenedor-boton a{
+    background: #1DAAE8;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.contenedor-boton a:hover{
+    background: #000;
+}
+
+/* =========================
+   BANNER
+========================= */
 
 .banner{
     background: linear-gradient(135deg,#000,#1DAAE8);
@@ -244,41 +273,32 @@ nav a:hover{
 }
 
 .banner h2{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-/* TIENDA */
-img{
-    display: block;
-    margin: auto;
-    border-radius: 15px;
-}
+/* =========================
+   TIENDA
+========================= */
+
 .tienda{
     text-align: center;
     background: linear-gradient(135deg,#000,#ffffff);
     padding: 80px 20px;
-    margin-top: 7rem;
-}
-.tienda img{
-    width: 300px;
-    margin-bottom: 20px;
+    margin-top: 4rem;
 }
 
 .tienda h2{
     color: #1DAAE8;
-    margin-bottom: 4rem;
-    font-size: 5.5rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
 }
 
-.tienda p{
-    max-width: 700px;
-    margin: auto;
-}
 .catalogo-productos{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
     gap: 25px;
 }
+
 .producto{
     background: white;
     border-radius: 15px;
@@ -286,10 +306,11 @@ img{
     text-align: center;
     box-shadow: 0 0 15px rgba(0,0,0,.15);
     transition: .3s;
+    cursor: pointer;
 }
 
 .producto:hover{
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.03);
 }
 
 .producto img{
@@ -301,32 +322,31 @@ img{
 .producto h3{
     color: #1DAAE8;
     margin: 15px 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
-.producto p{
-    padding: 0 15px 20px;
+.contenedor-boton-tienda{
+    margin-top: 40px;
 }
-.contenedor-boton-tienda .boton{
-    background: #ffffff;
-    color: rgb(89, 152, 204);
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: .3s;
-    margin-top: 3.5rem;
-}
-/* TROFEOS */
+
+/* =========================
+   TROFEOS
+========================= */
 
 .trofeos{
     text-align: center;
-    padding: 80px 20px;
+    background: white;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
 }
 
 .trofeos h2{
     color: #1DAAE8;
     margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .trofeos img{
@@ -335,7 +355,9 @@ img{
     margin-bottom: 20px;
 }
 
-/* CONTACTO */
+/* =========================
+   CONTACTO
+========================= */
 
 .contacto{
     background: #1DAAE8;
@@ -346,14 +368,18 @@ img{
 
 .contacto h2{
     margin-bottom: 20px;
+    font-size: 3rem;
 }
 
 .contacto p{
     max-width: 700px;
     margin: auto;
+    font-size: 1.2rem;
 }
 
-/* BOTONES */
+/* =========================
+   BOTONES
+========================= */
 
 .boton{
     display: inline-block;
@@ -363,7 +389,6 @@ img{
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 10px;
-    font-weight: bold;
     transition: .3s;
 }
 
@@ -372,14 +397,21 @@ img{
     color: #1DAAE8;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background: #000;
     color: white;
     text-align: center;
     padding: 40px 20px;
-    font-family: bebasNeue;
+    margin-top: 100px;
+}
+
+.cont-footer{
+    max-width: 1200px;
+    margin: auto;
 }
 
 footer img{
@@ -395,8 +427,67 @@ footer img{
     color: #1DAAE8;
     text-decoration: none;
     margin: 0 10px;
+    transition: .3s;
 }
 
 .redes a:hover{
     color: white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+    .titulo-principal{
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .bienvenida{
+        padding: 50px 8%;
+    }
+
+    .bienvenida h2{
+        font-size: 2rem;
+    }
+
+    .bienvenida p{
+        font-size: 1rem;
+    }
+
+    .slider{
+        height: 350px;
+    }
+
+    .contenido{
+        padding: 20px;
+    }
+
+    .contenido h2{
+        font-size: 2rem;
+    }
+
+    .contenido p{
+        font-size: 1rem;
+    }
+
+    .banner h2,
+    .tienda h2,
+    .contacto h2,
+    .trofeos h2,
+    .destacados h2{
+        font-size: 2rem;
+    }
+
+    .flecha{
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    nav ul{
+        gap: 10px;
+    }
 }
